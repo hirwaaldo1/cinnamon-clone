@@ -9,6 +9,8 @@ module.exports = {
       fontFamily: {
         'sans': "app",
         'sans-bold': "app-bold",
+        'sans-heavy': "app-heavy",
+        'sans-semibold':"app-semiBold"
       },
       colors: {
         'primary': {
@@ -16,23 +18,27 @@ module.exports = {
         },
         'secondry': {
           900:"#CFCFCF",
-          800:"#666666"
+          800:"#666666",
+          700:"#757575"
         }
       },
-      // cursor: {
-      //   'pointer': 'url("/assets/img/cursorP.svg"), pointer',
-      //   'default':'url("/assets/img/cursorN.svg"),default'
-      // },
+      width:{
+        "9/8":"1120px"
+      },
       backgroundImage: {
         'hero-bg': "url('/assets/img/img1.png')",
         'section-bg':"url('/assets/img/imgbg1.png')"
       },
       lineHeight:{
         150:"105px",
-        56:"56px"
+        56:"56px",
+        26:"1.625rem",
+        70:"70px",
       },
       fontSize:{
-        80:"80px"
+        80:"80px",
+        258:"258px",
+        "4xl":"40px"
       }
     },
   },

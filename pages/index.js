@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Button from "../components/Button";
+import ButtonBlog from "../components/ButtonBlog";
 import ImgSection from "../components/ImgSection";
 import SaleCard from "../components/SaleCard";
 import Service from "../components/Service";
@@ -24,12 +25,14 @@ export default function Home() {
           }, 100);
         }}
       >
-        <section className={`bg-section-bg bg-[#1C1C1C] h-screen mb-20`}>
-          <div className="max-w-6xl m-auto px-9 py-4 pt-52 flex flex-col ">
-            <h1 className="text-white  text-80 leading-150 font-bold font-sans-bold ">
-              Trick or treat design & development agency.
+        <section
+          className={`bg-section-bg bg-[#1C1C1C] h-fit pb-20 lg:pb-[190px] mb-20`}
+        >
+          <div className="max-w-6xl m-auto px-6 py-4 pt-20 lg:pt-52 flex flex-col ">
+            <h1 className="text-white  text-4xl lg:text-80 lg:leading-150 font-sans-heavy ">
+              Results or treat design & development agency.
             </h1>
-            <p className="w-3/5 max-w-[40rem] mt-5 text-xl text-secondry-900">
+            <p className="lg:w-3/5 max-w-[40rem] mt-5 text-xl leading-[32px] text-secondry-900">
               Extend your team with our high performing specialists or hire us
               to shape your product from scratch. Either way, we’ll get your
               product off the ground and build a momentum for your success.
@@ -40,29 +43,29 @@ export default function Home() {
           bgColor="#91F1C3"
           img="/assets/img/Mockup_1.webp"
           title="Corrily:  Optimize prices  to maximize revenue"
-          description="Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign."
+          description={`Corrily  tailors your prices and discounts to the needs of different user segments in order to \n increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily  \n and incorporating a fresh, and stunning website redesign.`}
         />
         <ImgSection
           bgColor="#52247F"
           img="/assets/img/Fiona_Thumbnail.webp"
-          title="Fiona: Engage & Decide"
-          description="Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign."
+          title={`Fiona: Engage & \n Decide`}
+          description={`Fiona is a fintech consumer-facing website that enables users to search for financial \n products, discover them, and receive personalized recommendations.`}
         />
         <ImgSection
           bgColor="#FFCB47"
           img="/assets/img/thumbnail.webp"
-          title="Ukulele:  The largest  tabs archive"
-          description="Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign."
+          title={`Ukulele: \n The largest ukulele tabs archive`}
+          description={`Ukulele is the number one ukulele community, where players of any level can find the most \n complete tabs and chords. Cinnamon offered a complete platform redesign including \n expansions and new features, focusing on keeping the user longer on the website.`}
         />
-        <section className="bg-section-bg bg-[#1C1C1C]">
-          <div className="max-w-6xl m-auto px-9 py-20 text-white">
-            <div className="grid grid-cols-2 ">
-              <div>
+        <section className="bg-section-bg mt-16 bg-[#1C1C1C]">
+          <div className="max-w-6xl m-auto px-9 py-20 lg:py-44 text-white">
+            <div className="lg:flex-nowrap flex-wrap flex gap-20 lg:gap-32">
+              <div className="">
                 <h1 className="font-sans-bold  text-5xl leading-56 ">
                   Our services
                 </h1>
               </div>
-              <div className="grid grid-cols-2 gap-10">
+              <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-24">
                 {services.map((v, i) => {
                   return (
                     <Service
@@ -78,16 +81,23 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-[#F6F6F6] relative">
-          <div className="max-w-6xl m-auto grid grid-cols-2 py-32 ">
+        <section className="bg-[#F6F6F6] px-9 lg:px-0 z-40 relative">
+          <div className="max-w-6xl m-auto grid grid-cols-1 z-[100000] lg:grid-cols-2 py-10 lg:py-32 ">
             <div className="w-fit my-auto">
-              <h1 className="font-sans-bold text-5xl leading-56 ">
+              <h1 className="font-sans-bold text-5xl leading-70 ">
                 Agile team <br />
                 on demand
               </h1>
             </div>
             <div>
-              <p className="w-3/5 mb-8  text-secondry-800 mt-2">
+              <Image
+                src="/assets/img/agile-team-on-demand.webp"
+                className="block lg:hidden py-10"
+                alt=""
+                width={250}
+                height={162}
+              />
+              <p className="w-full lg:w-3/5 mb-8  text-secondry-800 mt-2">
                 By hiring and managing talented people with skills specific to
                 your project, we build you a team that’s accomplished, agile and
                 scalable in both directions.
@@ -97,24 +107,28 @@ export default function Home() {
           </div>
           <Image
             src="/assets/img/agile-team-on-demand.webp"
-            className="absolute right-0 -bottom-2"
+            className="hidden lg:block absolute right-0 -z-[1] -bottom-2"
             alt=""
             width={338}
             height={220}
           />
         </section>
+
         <section>
-          <div className="max-w-6xl flex m-auto py-32 ">
-            <div>
-              <h1 className="font-sans-bold text-4xl leading-56 w-2/4 mb-10">
+          <div className="max-w-6xl flex lg:flex-nowrap flex-wrap m-auto py-20 lg:py-36 ">
+            <div className="relative">
+              <span className="absolute text-258 leading-none font-sans-bold -top-16 -z-10 lg:-left-20 text-[#EDEAFF] w-fit h-fit m-0 p-0">
+                “
+              </span>
+              <h1 className="font-sans-bold px-5 lg:px-0 text-3xl lg:text-4xl  lg:leading-56 lg:w-3/4 mb-10">
                 They’re consistent, and the communication is good.
               </h1>
-              <p className="w-3/5 mb-8 text-secondry-800 mt-2">
+              <p className="px-5 lg:px-0 lg:w-3/5 mb-8 text-secondry-800 mt-2">
                 When I have a deadline, they would work extra hours on the
                 weekend and after hours. Cinnamon gives the impression of being
                 a smaller team that’s focused on customers.
               </p>
-              <div className="flex space-x-5">
+              <div className="flex px-5 lg:px-0 space-x-5">
                 <Image
                   src="/assets/img/GarinProfile.webp"
                   height={68}
@@ -126,7 +140,7 @@ export default function Home() {
                   <span>CEO, ping</span>
                 </div>
               </div>
-              <div className="flex space-x-12 mt-10">
+              <div className="flex px-5 lg:px-0 space-x-12 mt-10">
                 <Image
                   src="/assets/img/arrow-left.webp"
                   className="cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2"
@@ -143,28 +157,39 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div>
+            <div className="lg:mt-16  relative">
               <Image
                 src="/assets/img/pingLogo.webp"
-                width={200}
-                height={67.94}
+                width={310}
+                className="lg:block hidden "
+                height={200}
                 alt=""
               />
+              <div className="lg:absolute bottom-5 px-5 lg:px-0">
+                <ButtonBlog title="View more blogs" />
+              </div>
             </div>
           </div>
         </section>
         <section className="bg-[#F6F6F6] overflow-hidden relative">
-          <div className="max-w-6xl m-auto grid grid-cols-2 gap-20 py-48 ">
+          <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2 gap-20 py-20 px-5 lg:px-0 lg:py-48 ">
             <div>
               <h1 className="font-sans-bold text-5xl leading-56 ">
                 Who we are
               </h1>
-              <p className="w-4/5 mb-8 text-secondry-800 mt-6">
+              <p className="lg:w-4/5 mb-8 text-secondry-800 mt-6">
                 Meet our international teams made up of 86 innovators, branched
                 into 8 departments, that influence the market throughout 20
                 different countries.
               </p>
-              <div className="grid grid-cols-2 gap-10 my-16">
+              <Image
+                src="/assets/img/who-we-are.webp"
+                alt=""
+                className="mb-8 block lg:hidden"
+                width={280}
+                height={444}
+              />
+              <div className="hidden lg:grid grid-cols-2 gap-10 my-16">
                 {who.map((v, i) => {
                   return (
                     <div key={i}>
@@ -182,7 +207,7 @@ export default function Home() {
               <Button title="Read About Us" />
             </div>
           </div>
-          <div className="absolute right-0 top-20 h-full">
+          <div className="lg:block hidden absolute right-0 top-20 h-full">
             <Image
               src="/assets/img/who-we-are.webp"
               alt=""
@@ -191,13 +216,15 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section className="relative">
-          <div className="max-w-6xl m-auto  py-48">
-            <div className="max-w-4xl grid grid-cols-2 gap-0">
+          <div className="max-w-6xl m-auto  py-20 lg:py-48">
+            <div className="max-w-4xl grid lg:px-0 px-5 grid-cols-1 lg:grid-cols-2 gap-0">
               <div>
                 <Image
                   src="/assets/img/cinn-college.webp"
                   alt=""
+                  className="lg:mb-0 mb-5"
                   width={300}
                   height={197.98}
                 />
@@ -217,11 +244,12 @@ export default function Home() {
             alt=""
             width={556}
             height={402}
-            className="absolute right-0 bottom-0"
+            className="lg:block hidden  absolute right-0 bottom-0"
           />
         </section>
+
         <section className="bg-section-bg bg-[#1C1C1C]">
-          <div className="max-w-6xl m-auto  grid grid-cols-2 space-x-20  py-48">
+          <div className="max-w-6xl m-auto lg:px-0 px-5  grid-cols-1 grid lg:grid-cols-2 lg:space-x-20  py-10 lg:py-48">
             <div>
               <h1 class="font-sans-bold text-5xl text-white leading-56 ">
                 We’re growing
@@ -238,9 +266,9 @@ export default function Home() {
                 return (
                   <div
                     key={i}
-                    className="flex justify-between py-2 w-4/5 mb-5  border-b "
+                    className="flex justify-between py-8 space-x-3 lg:w-10/12   border-b border-secondry-800 "
                   >
-                    <p className="font-sans-semi text-xl text-white leading-56">
+                    <p className="font-sans-semibold text-2xl text-white leading-40">
                       {v}
                     </p>
                     <Image
@@ -256,17 +284,20 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section>
-          <div className="max-w-6xl m-auto py-32">
-            <h1 class="font-sans-bold text-5xl leading-56 ">Our offices</h1>
-            <div className=" flex overflow-hidden space-x-6 mt-16">
+          <div className="max-w-6xl m-auto py-20 lg:pl-0 pl-5 lg:py-32">
+            <h1 class="font-sans-bold text-4xl lg:text-5xl leading-56 ">
+              Our offices
+            </h1>
+            <div className=" flex overflow-hidden space-x-6 mt-2  lg:mt-16">
               {[1, 2, 3, 4].map((v, i) => {
                 return (
                   <div key={i}>
                     <Image
                       src="/assets/img/zagreb.webp"
                       alt=""
-                      className="min-w-[544px]"
+                      className="min-w-[244px] lg:min-w-[544px]"
                       width={544}
                       height={378}
                     />
@@ -309,12 +340,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section>
-          <div className="max-w-6xl m-auto pb-20">
-            <h3 className="font-sans-bold text-5xl leading-56 ">
+          <div className="max-w-6xl m-auto lg:px-0 px-5 pb-20">
+            <h3 className="font-sans-bold text-4xl  lg:text-5xl lg:leading-56 ">
               Stay in the loop <br /> on tech topics
             </h3>
-            <div className="grid grid-cols-3 gap-8 mt-20">
+            <div className="flex overflow-hidden lg:grid  lg:grid-cols-3 gap-8 mt-10 lg:mt-20">
               {techTopics.map((v, i) => {
                 return (
                   <SaleCard
@@ -329,28 +361,21 @@ export default function Home() {
                 );
               })}
             </div>
-            <div className="flex space-x-3 mt-20">
-              <Image
-                src="/assets/img/arrowicon.svg"
-                className="my-auto"
-                width={8}
-                height={11}
-                alt=""
-              />
-              <p className="font-sans-bold text-primary-900 text-xl border-b-2 border-primary-900  ">
-                View more blogs
-              </p>
-            </div>
+            <ButtonBlog title="View more blogs" />
           </div>
         </section>
+
         <section className="bg-[#F6F6F6] relative">
           <div className="max-w-6xl m-auto  text-center py-32 ">
-            <h3 className="font-sans-bold text-center text-5xl leading-56 mb-10">Have a project in mind? <br/>Let{"'"}s work together.</h3>
+            <h3 className="font-sans-bold text-center text-5xl leading-56 mb-10">
+              Have a project in mind? <br />
+              Let{"'"}s work together.
+            </h3>
             <Button title="Contact us" />
           </div>
           <Image
             src="/assets/img/job-application.webp"
-            className="absolute left-0 -bottom-0"
+            className="w-32 lg:w-auto absolute left-0 -bottom-0"
             alt=""
             width={428}
             height={338}

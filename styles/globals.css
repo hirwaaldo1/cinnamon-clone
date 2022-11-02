@@ -9,3 +9,25 @@
   font-family: "app-bold";
   src: url("../public/assets/font/MontBold.woff");
 }
+@font-face {
+  font-family: "app-heavy";
+  src: url("../public/assets/font/MontHeavy.woff");
+}
+@font-face {
+  font-family: "app-semiBold";
+  src: url("../public/assets/font/MontSemiBold.woff2");
+}
+.button {
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(white, white);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+ 
+  transition: background-size .5s, color .5s;
+}
+.button:hover {
+  background-size: 100% 100%;
+  color: black;
+}

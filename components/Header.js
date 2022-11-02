@@ -23,24 +23,31 @@ export default function Header() {
  
     
   return (
-    <header style={{background:bgColor}} className=" transition duration-300 ease-in-out cursor-default  fixed w-full  px-9 py-4 z-50">
-        <div className="max-w-7xl flex justify-around m-auto">
+    <header style={{background:bgColor}} className=" transition duration-300 ease-in-out cursor-default  fixed w-full  px-6 py-4 z-50">
+        <div className=" lg:w-9/8 flex justify-between m-auto">
         <Image src={headerImg} className="cursor-pointer object-contain" height="20" width="160" alt=""/> 
-        <div className="flex space-x-10">
-        <ul style={{color:`${borderColor === "#5135FF" ? "black" : "white"}`}} className="flex space-x-10 text-base m-auto  font-simebold">
-            <li className="relative flex justify-center cursor-pointer">
-                Projects
-                <span  className="absolute -bottom-4 w-1.5 h-1.5 bg-primary-900  rounded-full "></span>    
+        <div className="flex space-x-12">
+        <ul style={{color:`${borderColor === "#5135FF" ? "black" : "white"}`}} className="hidden lg:flex space-x-8 justify-center h-full  text-base m-auto  font-simebold">
+            {
+                ["Projects","Services","About us","Carrers","Blog"].map((v,i)=>{
+                    return (
+                        <li key={i} className="relative mb-1  flex w-fit h-full overflow-hidden  duration-300 ease-in-out group justify-center items-center cursor-pointer">
+                {v}
+                <span  className="absolute   transition duration-300  ease-in-out  z-[10000] group-hover:-translate-x-0 group-hover:block -translate-x-20 bottom-0.5 w-1.5 h-1.5 bg-primary-900  rounded-full "></span>    
             </li>
-            <li className="cursor-pointer">Services</li>
-            <li className="cursor-pointer">About us </li>
-            <li className="cursor-pointer">Carrers</li>
-            <li className="cursor-pointer">Blog</li>
+                    )
+                })
+            }
         </ul>
-        <div style={{border:`2px solid ${borderColor}`}} className="cursor-pointer bg-transparent flex justify-center p-2 rounded-full " >
-            <Image src={`${borderColor === "#5135FF" ?"/assets/img/play-blue.svg":"/assets/img/play.svg"}`} className="ml-0.5" alt="" width={20} height={17} />
+        <div style={{border:`2px solid ${borderColor}`}} className="cursor-pointer bg-transparent testButton hidden lg:flex justify-center p-2 rounded-full " >
+            <Image src={`${borderColor === "#5135FF" ?"/assets/img/play-blue.svg":"/assets/img/play.svg"}`} className="ml-1" alt="" width={20} height={17} />
         </div>
-        <Button title="Contact Us" />
+        <div className="hidden lg:flex">
+        <Button  title="Contact Us" />
+        </div>
+        <div className="flex lg:hidden py-2">
+            <Image src="/assets/img/menu.svg" className={bgColor === "white" ?"invert":""} alt="" width={32} height={32} /> 
+        </div>
         </div>
         </div>
       

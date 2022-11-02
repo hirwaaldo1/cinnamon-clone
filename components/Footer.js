@@ -5,24 +5,24 @@ import Button from "./Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-section-bg bg-[#1C1C1C]">
-        <div className="max-w-6xl flex space-x-0 m-auto py-20">
+    <footer className="bg-section-bg h-full relative px-6 lg:px-0 pb-1 bg-[#1C1C1C]">
+        <div className="max-w-6xl border-b  border-b-secondry-800 flex flex-wrap lg:flex-nowrap space-x-0 m-auto pt-20 pb-10">
             <div className="text-white w-3/5 relative">
             <Image src="/assets/img/logo.svg" className="cursor-pointer object-contain" height="20" width="160" alt=""/> 
-            <ul className="my-10">
+            <ul className="my-10 hidden lg:block">
                 {
                    ['Home','Projects','Services','About Us','Carrers','Blog'].map((v,i)=>{
                     return <p className="mb-4 text-secondry-900" key={i}>{v}</p>
                    })
                 }
             </ul>
-            <Link className="absolute bottom-5  underline text-sm" href="hello@cinnamon.agency">
+            <Link className="lg:block hidden absolute bottom-5  underline text-sm" href="hello@cinnamon.agency">
              hello@cinnamon.agency
             </Link>
             </div>
-            <div className="text-white relative">
-                <h1 className="font-sans-bold  text-3xl ">All software, zero bullshit.</h1>
-                <div className="grid grid-cols-3 space-x-10 mt-16 mb-56">
+            <div className="text-white relative mt-10 lg:mt-0">
+                <h1 className="font-sans-bold text-xl lg:text-3xl ">All software, zero bullshit.</h1>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 mt-16 mb-10 lg:mb-36">
                     {
                         location.map((v, i)=>{
                             return(
@@ -34,8 +34,8 @@ export default function Footer() {
                         })
                     }
                 </div>
-                <div className="flex justify-between">
-                    <div className="w-64">
+                <div className="lg:flex-nowrap flex-wrap flex justify-between">
+                    <div className="w-full lg:w-64">
                         <p className="font-sans-bold text-lg">Our newsletter</p>
                         <div className="relative z-0 my-3 mb-6 w-full group">
                             <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-secondry-900 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-900 peer" placeholder=" " required />
@@ -45,10 +45,21 @@ export default function Footer() {
                         Subscribe
                         </button>
                     </div>
-                    <div>
+                    <div className="w-fit m-auto lg:m-0">
                         <Image src="/assets/img/Capture.PNG" width={216} height={159} alt="" />
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className="max-w-6xl mt-8 mb-7 text-white m-auto">
+            <div className="lg:flex-nowrap items-center flex justify-between">
+                    <div className="flex w-full space-x-4 font-sans-semibold text-secondry-700">
+                        <p>© 2022 Cinnamon</p>
+                        <p className="underline hidden lg:block">Privacy Policy</p>
+                    </div>
+                    <div>
+                        <Image  src="/assets/img/Capture1.PNG" alt="" width={246} height={21} />
+                    </div>
             </div>
         </div>
     </footer>

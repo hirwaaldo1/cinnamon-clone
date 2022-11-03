@@ -9,15 +9,15 @@ export default function BlogSection() {
               <span className="absolute text-258 leading-none font-sans-bold -top-16 -z-10 lg:-left-20 text-[#EDEAFF] w-fit h-fit m-0 p-0">
                 “
               </span>
-              <h1 className="font-sans-bold px-5 lg:px-0 text-3xl lg:text-4xl  lg:leading-56 lg:w-3/4 mb-10">
+              <h1 className="font-sans-bold leading-[44px] px-5 lg:px-0 text-3xl lg:text-4xl  lg:leading-56 lg:w-3/4 mb-10">
                 They’re consistent, and the communication is good.
               </h1>
-              <p className="px-5 lg:px-0 lg:w-3/5 mb-8 text-secondry-800 mt-2">
+              <p className="px-5 lg:px-0  mb-8 text-secondry-800 mt-2">
                 When I have a deadline, they would work extra hours on the
-                weekend and after hours. Cinnamon gives the impression of being
-                a smaller team that’s focused on customers.
+                weekend and after <br/> hours. Cinnamon gives the impression of being
+                a smaller team that’s focused on <br/> customers.
               </p>
-              <div className="flex px-5 lg:px-0 space-x-5">
+              <div className="flex px-5 lg:px-0 space-x-5 py-5">
                 <Image
                   src="/assets/img/GarinProfile.webp"
                   height={68}
@@ -54,7 +54,7 @@ export default function BlogSection() {
                 height={200}
                 alt=""
               />
-              <div className="lg:absolute bottom-5 px-5 lg:px-0">
+              <div className="lg:absolute bottom-2 px-5 lg:px-0">
                 <ButtonBlog title="View more blogs" />
               </div>
             </div>

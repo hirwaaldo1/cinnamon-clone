@@ -7,7 +7,7 @@ export default function CareerSection() {
   return (
     
     <section className="bg-section-bg bg-[#1C1C1C]">
-    <div className="max-w-6xl m-auto lg:px-0 px-5  grid-cols-1 grid lg:grid-cols-2 lg:space-x-20  py-10 lg:py-48">
+    <div className="max-w-6xl m-auto lg:px-0 px-5  grid-cols-1 grid lg:grid-cols-2 lg:space-x-20  py-10 lg:py-36">
       <div>
         <h1 className="font-sans-bold text-5xl text-white leading-56 ">
           We’re growing
@@ -24,7 +24,7 @@ export default function CareerSection() {
           return (
             <div
               key={i}
-              className="flex justify-between py-8 space-x-3 lg:w-10/12   border-b border-secondry-800 "
+              className="flex justify-between py-8 space-x-3 lg:w-11/12   border-b border-secondry-600 "
             >
               <p className="font-sans-semibold text-2xl text-white leading-40">
                 {v}

@@ -24,7 +24,7 @@ export default function HeaderLayout() {
     
   return (
     <header style={{background:bgColor}} className=" transition duration-300 ease-in-out cursor-default  fixed w-full  px-6 py-4 z-50">
-        <div className=" lg:w-9/8 flex justify-between m-auto">
+        <div className="lg:w-9/8 flex justify-between m-auto">
         <Image src={headerImg} className="cursor-pointer object-contain" height="20" width="160" alt=""/> 
         <div className="flex space-x-12">
         <ul style={{color:`${borderColor === "#5135FF" ? "black" : "white"}`}} className="hidden lg:flex space-x-8 justify-center h-full  text-base m-auto  font-simebold">

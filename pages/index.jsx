@@ -9,6 +9,7 @@ import CareerSection from "../components/sections/homepage/Career";
 import OfficeSection from "../components/sections/homepage/Office";
 import TopicSection from "../components/sections/homepage/Topic.jsx";
 import ProjectSection from "../components/sections/homepage/Project";
+import ServiceSection from "../components/sections/homepage/Service";
 export default function Home() {
   return (
     <div>
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <ProductSection />
+        <ServiceSection />
         <TeamSection />
         <BlogSection />
         <AboutSection />

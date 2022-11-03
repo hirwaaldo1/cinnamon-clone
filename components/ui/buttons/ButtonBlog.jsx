@@ -10,7 +10,7 @@ export default function ButtonBlog({title}) {
       height={11}
       alt=""
     />
-    <p className="font-sans-bold text-primary-900 text-xl border-b-2 border-primary-900  ">
+    <p className="font-sans-bold text-primary-900 text-base uppercase border-b-2 border-primary-900  ">
       {title}
     </p>
   </div>

@@ -60,17 +60,20 @@ export let techTopics = [
 export let location = [
     {
         name:"Zagreb",
+        img:"/assets/img/zagreb.webp",
         details:`Slavonska avenija 6,
         10000, Zagreb, Croatia
         +385 99 347 3103`
     },
     {
         name:"New York",
+        img:"/assets/img/new-york.webp",
         details:`500 7th Ave, New York,
         NY 10018, United States`
     },
     {
         name:"Belgrade",
+        img:"/assets/img/belgrade.webp",
         details:`Bulevar vojvode Mišića 37
         11000, Belgrade, Serbia`
     }

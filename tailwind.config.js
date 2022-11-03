@@ -19,7 +19,9 @@ module.exports = {
         'secondry': {
           900:"#CFCFCF",
           800:"#666666",
-          700:"#757575"
+          700:"#757575",
+          600:"#3F3F3F",
+          500:"#AFAFAF"
         }
       },
       width:{
@@ -38,7 +40,11 @@ module.exports = {
       fontSize:{
         80:"80px",
         258:"258px",
-        "4xl":"40px"
+        "4xl":"40px",
+        "38.5":"38px"
+      },
+      maxWidth: {
+        '6xl': '1120px',
       }
     },
   },

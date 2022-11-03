@@ -10,9 +10,9 @@ export default function AboutSection() {
         <h1 className="font-sans-bold text-5xl leading-56 ">
           Who we are
         </h1>
-        <p className="lg:w-4/5 mb-8 text-secondry-800 mt-6">
-          Meet our international teams made up of 86 innovators, branched
-          into 8 departments, that influence the market throughout 20
+        <p className=" mb-8 text-secondry-800 mt-6">
+          Meet our international teams made up of 86 <br/> innovators, branched
+          into 8 departments, that <br/> influence the market throughout 20
           different countries.
         </p>
         <Image

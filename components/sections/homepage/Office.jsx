@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { location } from "../../../data/data";
 
 export default function OfficeSection() {
   return (
@@ -7,18 +8,18 @@ export default function OfficeSection() {
             <h1 className="font-sans-bold text-4xl lg:text-5xl leading-56 ">
               Our offices
             </h1>
-            <div className=" flex overflow-hidden space-x-6 mt-2  lg:mt-16">
-              {[1, 2, 3, 4].map((v, i) => {
+            <div className=" flex lg:inline-flex  overflow-hidden space-x-8 mt-2  lg:mt-16">
+              {location.map((v, i) => {
                 return (
                   <div key={i}>
                     <Image
-                      src="/assets/img/zagreb.webp"
+                      src={v.img}
                       alt=""
                       className="min-w-[244px] lg:min-w-[544px]"
                       width={544}
                       height={378}
                     />
-                    <div className="flex space-x-2 mt-8">
+                    <div className="flex space-x-5 mt-8">
                       <div className="w-fit mt-1">
                         <Image
                           src="/assets/img/location.svg"
@@ -29,9 +30,9 @@ export default function OfficeSection() {
                       </div>
 
                       <div>
-                        <h5 className="font-sans-bold text-xl mb-3">Zagreb</h5>
+                        <h5 className="font-sans-bold text-2xl mb-3">{v.name}</h5>
                         <p className=" text-secondry-800  mb-0">
-                          Slavonska avenija 6, 10000, Zagreb, Croatia
+                          {v.details}
                         </p>
                       </div>
                     </div>
@@ -42,7 +43,7 @@ export default function OfficeSection() {
             <div className="flex space-x-12 mt-16">
               <Image
                 src="/assets/img/arrow-left.webp"
-                className="cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2"
+                className="invert-[.5] cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2"
                 width={48}
                 height={27}
                 alt=""

@@ -4,7 +4,7 @@ import Button from "../../ui/buttons/Button"
 export default function TeamSection() {
   return (
     <section className="bg-[#F6F6F6] px-9 lg:px-0 z-40 relative">
-          <div className="max-w-6xl m-auto grid grid-cols-1 z-[100000] lg:grid-cols-2 py-10 lg:py-32 ">
+          <div className="max-w-6xl m-auto grid grid-cols-1 z-[100000] lg:grid-cols-2 py-10 lg:py-40 ">
             <div className="w-fit my-auto">
               <h1 className="font-sans-bold text-5xl leading-70 ">
                 Agile team <br />

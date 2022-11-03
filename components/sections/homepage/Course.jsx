@@ -16,7 +16,7 @@ export default function CourseSection() {
                 />
               </div>
               <div>
-                <p className="w-4/5 mb-8 text-secondry-800 mt-2">
+                <p className="w-4/5 mb-8 leading-26 text-secondry-800 mt-2">
                   Seize the unique opportunity to participate in a wide range of
                   courses conducted by professionals with an impeccable
                   reputation in the digital industry.

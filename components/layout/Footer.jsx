@@ -5,13 +5,13 @@ import { location } from "../../data/data";
 export default function FooterLayout() {
   return (
     <footer className="bg-section-bg h-full relative px-6 lg:px-0 pb-1 bg-[#1C1C1C]">
-        <div className="max-w-6xl border-b  border-b-secondry-800 flex flex-wrap lg:flex-nowrap space-x-0 m-auto pt-20 pb-10">
+        <div className="max-w-6xl border-b  border-b-secondry-800 flex flex-wrap lg:flex-nowrap space-x-0 m-auto pt-20 pb-5">
             <div className="text-white w-3/5 relative">
             <Image src="/assets/img/logo.svg" className="cursor-pointer object-contain" height="20" width="160" alt=""/> 
             <ul className="my-10 hidden lg:block">
                 {
                    ['Home','Projects','Services','About Us','Carrers','Blog'].map((v,i)=>{
-                    return <p className="mb-4 text-secondry-900" key={i}>{v}</p>
+                    return <p className="mb-3 text-secondry-900" key={i}>{v}</p>
                    })
                 }
             </ul>
@@ -27,7 +27,7 @@ export default function FooterLayout() {
                             return(
                                 <div key={i}>
                                     <h4 className="font-sans-bold text-lg ">{v.name}</h4>
-                                    <p className="text-secondry-900 text-sm">{v.details}</p>
+                                    <p className="text-secondry-900 text-sm lg:w-3/4">{v.details}</p>
                                 </div>
                             )
                         })
@@ -40,7 +40,7 @@ export default function FooterLayout() {
                             <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b border-secondry-900 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-primary-900 peer" placeholder=" " required />
                             <label for="floating_email" className="peer-focus:font-medium absolute text-sm text-secondry-900 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary-900  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
                         </div>
-                        <button className="border-primary-900  w-full cursor-pointer  m-0 pt-2 px-8 pb-2 border-2 text-white bg-primary-900 text-base">
+                        <button className="border-primary-900 button w-full cursor-pointer  m-0 pt-2 px-8 pb-2 border-2 text-white bg-primary-900 text-base">
                         Subscribe
                         </button>
                     </div>
@@ -52,7 +52,7 @@ export default function FooterLayout() {
         </div>
         <div className="max-w-6xl mt-8 mb-7 text-white m-auto">
             <div className="lg:flex-nowrap items-center flex justify-between">
-                    <div className="flex w-full space-x-4 font-sans-semibold text-secondry-700">
+                    <div className="flex w-full space-x-6 font-sans-semibold text-secondry-500">
                         <p>© 2022 Cinnamon</p>
                         <p className="underline hidden lg:block">Privacy Policy</p>
                     </div>

@@ -4,7 +4,7 @@ import Button from "../../ui/buttons/Button";
 export default function ServiceSection() {
   return (
     <section className="bg-section-bg mt-16 bg-[#1C1C1C]">
-          <div className="max-w-6xl m-auto px-9 py-20 lg:py-44 text-white">
+          <div className="max-w-6xl m-auto px-9 lg:px-0 py-20 lg:py-44 text-white">
             <div className="lg:flex-nowrap flex-wrap flex gap-20 lg:gap-32">
               <div className="">
                 <h1 className="font-sans-bold  text-5xl leading-56 ">

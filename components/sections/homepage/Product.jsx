@@ -6,7 +6,7 @@ export default function ProductSection() {
       <ImgSection
         bgColor="#91F1C3"
         img="/assets/img/Mockup_1.webp"
-        title="Corrily:  Optimize prices  to maximize revenue"
+        title={`Corrily:  Optimize prices \n  to maximize revenue`}
         description={`Corrily  tailors your prices and discounts to the needs of different user segments in order to \n increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily  \n and incorporating a fresh, and stunning website redesign.`}
       />
       <ImgSection

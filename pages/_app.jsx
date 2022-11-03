@@ -1,12 +1,12 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import FooterLayout from '../components/layout/Footer'
+import HeaderLayout from '../components/layout/Header'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <>
-         <Header />
+         <HeaderLayout />
          <Component {...pageProps} />
-         <Footer />
+         <FooterLayout />
          </>
 }
 

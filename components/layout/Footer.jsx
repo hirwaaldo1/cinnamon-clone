@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { location } from "../data/data";
-import Button from "./Button";
+import { location } from "../../data/data";
 
-export default function Footer() {
+export default function FooterLayout() {
   return (
     <footer className="bg-section-bg h-full relative px-6 lg:px-0 pb-1 bg-[#1C1C1C]">
         <div className="max-w-6xl border-b  border-b-secondry-800 flex flex-wrap lg:flex-nowrap space-x-0 m-auto pt-20 pb-10">

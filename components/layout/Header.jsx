@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "../ui/buttons/Button";
 
-export default function Header() {
+export default function HeaderLayout() {
     const [bgColor, setBgColor] = useState("transpart")
     const [borderColor, setBorderColor] = useState("white")
     const [headerImg, setHeaderImg] = useState("/assets/img/logo.svg")

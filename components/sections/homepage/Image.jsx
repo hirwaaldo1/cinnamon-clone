@@ -1,5 +1,5 @@
 import Image from 'next/image'
-export default function ImgSection({bgColor, img , title, description}) {
+export default function ImageSection({bgColor, img , title, description}) {
   return (
     <section >
           <div className='max-w-6xl m-auto  px-9 py-16'>

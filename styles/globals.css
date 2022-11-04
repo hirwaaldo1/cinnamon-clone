@@ -34,3 +34,9 @@ body{
   background-size: 140% 200%;
   color: black;
 }
+.scrollbar-width {
+  scrollbar-width: none !important;
+}
+.scrollbar-width::-webkit-scrollbar {
+  @apply hidden;
+}

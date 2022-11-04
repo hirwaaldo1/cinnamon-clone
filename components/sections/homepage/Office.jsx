@@ -8,7 +8,8 @@ export default function OfficeSection() {
             <h1 className="font-sans-bold text-4xl lg:text-5xl leading-56 ">
               Our offices
             </h1>
-            <div className=" flex lg:inline-flex  overflow-hidden space-x-8 mt-2  lg:mt-16">
+         <div className="max-w-full scrollbar-width overflow-x-auto lg:overflow-hidden">
+         <div className=" flex  lg:flex  space-x-8 mt-2  lg:mt-16">
               {location.map((v, i) => {
                 return (
                   <div key={i}>
@@ -40,7 +41,8 @@ export default function OfficeSection() {
                 );
               })}
             </div>
-            <div className="flex space-x-12 mt-16">
+         </div>
+            <div className=" hidden lg:flex space-x-12 mt-16">
               <Image
                 src="/assets/img/arrow-left.webp"
                 className="invert-[.5] cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2"

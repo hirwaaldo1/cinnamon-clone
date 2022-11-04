@@ -6,16 +6,16 @@ export default function FooterLayout() {
   return (
     <footer className="bg-section-bg h-full relative px-6 lg:px-0 pb-1 bg-[#1C1C1C]">
         <div className="max-w-6xl border-b  border-b-secondry-800 flex flex-wrap lg:flex-nowrap space-x-0 m-auto pt-20 pb-5">
-            <div className="text-white w-3/5 relative">
+            <div className="text-white lg:w-3/5 w-full  relative">
             <Image src="/assets/img/logo.svg" className="cursor-pointer object-contain" height="20" width="160" alt=""/> 
-            <ul className="my-10 hidden lg:block">
+            <ul className="my-10 grid grid-cols-2 lg:block">
                 {
                    ['Home','Projects','Services','About Us','Carrers','Blog'].map((v,i)=>{
                     return <p className="mb-3 text-secondry-900" key={i}>{v}</p>
                    })
                 }
             </ul>
-            <Link className="lg:block hidden absolute bottom-5  underline text-sm" href="hello@cinnamon.agency">
+            <Link className="lg:block hidden absolute bottom-14  underline text-sm" href="hello@cinnamon.agency">
              hello@cinnamon.agency
             </Link>
             </div>
@@ -46,17 +46,22 @@ export default function FooterLayout() {
                     </div>
                     <div className="w-fit m-auto lg:m-0">
                         <Image src="/assets/img/Capture.PNG" width={216} height={159} alt="" />
+                        <div className="text-center w-fit m-auto  mt-10">
+                        <Link className="underline block lg:hidden text-base " href="hello@cinnamon.agency">
+                          hello@cinnamon.agency
+                        </Link>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="max-w-6xl mt-8 mb-7 text-white m-auto">
-            <div className="lg:flex-nowrap items-center flex justify-between">
-                    <div className="flex w-full space-x-6 font-sans-semibold text-secondry-500">
+        <div className="max-w-6xl  mt-5 lg:mt-8 mb-7 text-white m-auto">
+            <div className="  flex-col-reverse lg:flex-row lg:flex-nowrap items-center flex justify-between">
+                    <div className="flex lg:pt-0 pt-5 border-t lg:border-none border-secondry-700 w-full space-x-6 font-sans-semibold text-secondry-500">
                         <p>© 2022 Cinnamon</p>
-                        <p className="underline hidden lg:block">Privacy Policy</p>
+                        <p className="underline ">Privacy Policy</p>
                     </div>
-                    <div>
+                    <div className="lg:mb-0 mb-5">
                         <Image  src="/assets/img/Capture1.PNG" alt="" width={246} height={21} />
                     </div>
             </div>

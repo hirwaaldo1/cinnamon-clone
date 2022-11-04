@@ -31,7 +31,7 @@ export default function HeaderLayout() {
             {
                 ["Projects","Services","About us","Carrers","Blog"].map((v,i)=>{
                     return (
-                        <li key={i} className="relative mb-1  flex w-fit h-full overflow-hidden  duration-300 ease-in-out group justify-center items-center cursor-pointer">
+                        <li key={i} className="relative mb-1  flex w-fit h-full overflow-hidden hover:text-primary-900  duration-300 ease-in-out group justify-center items-center cursor-pointer">
                 {v}
                 <span  className="absolute   transition duration-300  ease-in-out  z-[10000] group-hover:-translate-x-0 group-hover:block -translate-x-20 bottom-0.5 w-1.5 h-1.5 bg-primary-900  rounded-full "></span>    
             </li>
